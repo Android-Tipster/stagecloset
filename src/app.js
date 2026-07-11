@@ -19,7 +19,7 @@ import { parseCSV, importRows, exportCSV } from './engine/csvio.js';
 import { validateKey } from './engine/license.js';
 import { serializeVault, parseVault } from './engine/vault.js';
 
-var BUY_URL = 'https://payhip.com/b/REPLACE';
+var BUY_URL = 'https://payhip.com/b/V9k6A';
 var FREE_ITEM_LIMIT = 150;
 var FREE_PROD_LIMIT = 1;
 var LS_STATE = 'stagecloset.state.v1';
