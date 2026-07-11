@@ -4,6 +4,8 @@
 
 **Live app: https://android-tipster.github.io/stagecloset/**
 
+![StageCloset closet view](docs/img/screenshot.png)
+
 Every drama program has the same system: a binder, a half-maintained spreadsheet, and one person who remembers where the Victorian gowns live. When that person graduates or moves on, the knowledge goes with them. After every production, pieces walk away and nobody can say who had them.
 
 StageCloset runs entirely in your browser. No account, no subscription, nothing uploads. It works on the Chromebook in the costume loft with the WiFi down.
