@@ -1,0 +1,5 @@
+node_modules/
+delivery/
+OFFER.md
+docs/_bundle_check.js
+*.log

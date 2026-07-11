@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StageCloset: costume &amp; prop inventory that lives in your browser, not the cloud</title>
+<meta name="description" content="Free costume and prop inventory for school and community theater. Tag every piece, check costumes in and out, build pull sheets by rack, and reconcile after strike. 100% in your browser: no account, no upload, works offline.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%2316110f'/%3E%3Cpath d='M50 16 82 50 50 84 18 50Z' fill='%23d4a545'/%3E%3Cpath d='M50 32 66 50 50 68 34 50Z' fill='%23a3132e'/%3E%3C/svg%3E">
+<meta property="og:title" content="StageCloset: the costume closet binder, computerized">
+<meta property="og:description" content="Tag every costume and prop, check pieces in and out, print pull sheets by rack, and know what never came back after strike. Free, in your browser, nothing uploads.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://android-tipster.github.io/stagecloset/">
+<meta property="og:image" content="https://android-tipster.github.io/stagecloset/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "StageCloset",
+  "url": "https://android-tipster.github.io/stagecloset/",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any (browser-based, works offline)",
+  "description": "Local-first costume and prop inventory for school and community theater: tagged catalog, check-out tracking, pull sheets grouped by rack, costume plots, and post-show strike reports. No account, nothing uploads.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<!-- BUILD:CSS -->
+<link rel="stylesheet" href="./style.css">
+<!-- /BUILD:CSS -->
+</head>
+<body>
+<header class="top no-print">
+  <h1><span class="tick">&#9670;</span> StageCloset</h1>
+  <span class="tagline">The costume closet binder, computerized. Nothing uploads, ever.</span>
+  <button class="pro-badge" id="proBadge">Free plan</button>
+</header>
+
+<nav class="tabs no-print" id="tabs">
+  <button data-tab="closet" class="active">Closet <span class="cnt" id="cntItems"></span></button>
+  <button data-tab="checkout">Check In / Out <span class="cnt" id="cntOut"></span></button>
+  <button data-tab="productions">Productions <span class="cnt" id="cntProds"></span></button>
+  <button data-tab="dashboard">Dashboard</button>
+  <button data-tab="vault">Import / Backup</button>
+</nav>
+
+<main class="no-print">
+  <div class="tabpane active" id="pane-closet"></div>
+  <div class="tabpane" id="pane-checkout"></div>
+  <div class="tabpane" id="pane-productions"></div>
+  <div class="tabpane" id="pane-dashboard"></div>
+  <div class="tabpane" id="pane-vault"></div>
+</main>
+
+<div class="modal-back" id="modalBack"><div class="modal" id="modalBox"></div></div>
+
+<div class="print-only" id="printArea"></div>
+
+<footer class="foot no-print">
+  <span>StageCloset: local-first inventory for school &amp; community theater.</span>
+  <span>Your data lives in this browser only. Export a vault before switching machines.</span>
+  <span class="right" id="footState"></span>
+</footer>
+
+<!-- BUILD:JS -->
+<script type="module" src="./app.js"></script>
+<!-- /BUILD:JS -->
+</body>
+</html>
